@@ -1,0 +1,28 @@
+.page-layout {
+    @mixin atMedium {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+
+.page-row-gap {
+    position: relative;
+    top: 40px;
+}
+
+.copyright {
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    float: right;
+    margin-top: 220px;
+
+    @mixin atMedium {
+        width: 980px;
+        margin-top: 50px;
+    }
+
+    p {
+        float: right;
+    }
+}

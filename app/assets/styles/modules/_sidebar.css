@@ -1,0 +1,18 @@
+.sidebar {
+    width: 225px;
+    float: left;
+    margin-right: 20px;
+    height: 100vh;
+    display: none;
+
+    @mixin atMedium {
+        display: block;
+    }
+
+    h3 {
+        padding: .25rem 0 .25rem .75rem;
+        background-color: $lightBlue;
+        font-weight: 300;
+        color: white;
+    }
+}

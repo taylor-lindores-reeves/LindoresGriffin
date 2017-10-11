@@ -1,0 +1,31 @@
+.large-hero {
+    background: url('../../../assets/images/hero-steps.png') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 460px;
+    top: 65px;
+
+    @mixin atMedium {
+        top: 2rem;
+        background-size: cover;
+        width: 960px;
+        height: 490px;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding: 3rem;
+        font-weight: 200;
+        font-size: 1.4rem;
+
+        @mixin atMedium {
+            font-size: 2rem;
+            text-align: left;
+            width: 60%;
+            padding: 1rem 0 0 3rem;
+        }
+    }
+}

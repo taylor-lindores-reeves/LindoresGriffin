@@ -1,0 +1,26 @@
+extends layout
+include mixins/_contactForm
+
+block head
+    - var theTitle = "Contact"
+    title= `${h.siteName} | ${theTitle}`
+
+block sidebar
+    .sidebar.page-row-gap.main-content
+        h3 Contact
+
+block content
+    .contact.page-row-gap.main-content
+        .contact__content
+            .contact__content__address
+                address Academy for Innovation and Research, <br> Penryn Campus,<br> Penryn,<br> TR10 9EZ
+            .contact__content__numbers.page-row-gap
+                p Taylor:- 07947790914
+                p William:- 07903112900
+            .contact__content__paragraph.page-row-gap
+                p We are always happy to meet with local business owners for a chat. Please do get in touch.
+
+        .contact__map
+            iframe(src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJS8nJH20ja0gRYq2RMWzcAog&key=AIzaSyAMJvT3K7NPZVdLu9_C7CASW3ZfgccYFPg" width="470" height="370" allowfullscreen)
+
+        +contactForm(contact)

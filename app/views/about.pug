@@ -1,0 +1,39 @@
+extends layout
+
+block head
+    - var theTitle = "About"
+    title= `${h.siteName} | ${theTitle}`
+
+block content
+    .about.page-row-gap.main-content
+        h1 It takes fresh perspectives and future-oriented thinking to run a business
+        img(src="../assets/images/icons/squeaker.png" width="100px")
+        p.page-row-gap
+            | Lindores & Griffin provides web design, mobile website design, SEO, social media marketing
+            | and website video production to businesses locally and throughout the UK. We offer free website
+            | consultations, SEO Reports, free sample mobile websites, and general online business needs
+            | analysis to help prospective clients decide what they require to help their business gain more
+            | customers and more profits.
+            | <br>
+            | <br>
+            | The leverage that technology provides to those involved in any business is undeniable. Our mission
+            | is to devote our time and energy to show local businesses how to use technology to their advantage.
+            | One of the most important values we try to live by is to consistently seek and build meaningful
+            | relationships. Each new and exciting experience we take on provides us with an
+            | opportunity to foster creativity, and ultimately grow and develop your business.
+
+        .about__profile.page-row-gap
+            .about__profile__one.page-row-gap
+                img(src='../assets/images/taylor.png')
+                h2 Taylor Lindores
+                h3 Managing Director
+                a(href='mailto:taylor@lindoresgriffin.co.uk') taylor@lindoresgriffin.co.uk
+
+            .about__profile__two.page-row-gap
+                img(src='../assets/images/william.png')
+                h2 William Griffin
+                h3 Managing Director
+                a(href='mailto:william@lindoresgriffin.co.uk') william@lindoresgriffin.co.uk
+
+        .contact-us-btn
+            a(href='/contact'): button Get in touch

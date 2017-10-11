@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    block head
+      - var theTitle = "Home"
+      title= `${h.siteName} | ${theTitle}`
+    link(rel="stylesheet" type="text/css" href="temp/styles/styles.bundle.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans")
+    link(rel="icon" href="assets/images/icons/favicon.png" type="image/x-icon")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    met(name="keywords" content="consultancy, technology, computers, internet")
+    met(name="description" content="An information technology consulting company")
+
+  body
+    .page-layout
+      block header
+        .site-header
+          .mobile-menu-icon
+            span
+            span
+            span
+            span
+            span
+            span
+
+          .site-header__logo
+            a(href="/home"): img(src="../images/icons/logo.png")
+            h3 Integrating technology and business with simplicity
+
+          .mobile-nav
+            .mobile-nav__container
+              ul
+                li: a(href="/about") About
+                li: a(href="/contact") Contact
+                li: a(href="/services") Services
+                li: a(href="/projects") Projects
+
+          .site-header__navigation
+            a(href="/home") Home
+            a(href="/about").dropbtn About
+            a(href="/contact").dropdown Contact
+            a(href="/services") Services
+            a(href="/projects") Projects
+
+      block sidebar
+        .sidebar.page-row-gap.main-content
+          h3 About
+
+      block messages
+        if locals.flashes
+          .inner
+            .flash-messages
+              - const categories = Object.keys(locals.flashes)
+              each category in categories
+                each message in flashes[category]
+                  .flash(class=`flash--${category}`)
+                    p.flash__text!= message
+                    button.flash__remove(onClick="this.parentElement.remove()") &times;
+
+      block content
+          // TODO what is stateless? What is sessions? How does sessions enable data to be passed from one request to another?
+
+      block copyright
+        .copyright.main-content
+          p © Created by Lindores & Griffin Ltd.
+
+      block scripts
+        script(type="text/javascript" src="temp/scripts/app.bundle.js")

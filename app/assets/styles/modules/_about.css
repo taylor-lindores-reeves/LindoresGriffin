@@ -1,0 +1,91 @@
+.about {
+    text-align: center;
+    position: relative;
+    padding-top: 2em;
+
+    @mixin atMedium {
+        padding-top: 0;
+    }
+
+    h1 {
+        font-weight: 100;
+        padding-bottom: 1em;
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding: 0 1rem 0 1rem;
+
+        @mixin atMedium {
+            padding: 0;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+        h2 {
+            color: $mainBlue;
+            font-weight: 100;
+            padding: .5rem 0 0 0;
+            font-size: 1.25rem;
+        }
+
+        h3 {
+            font-weight: 100;
+            font-size: 1.4rem;
+            padding: .25rem 0;
+        }
+
+        a {
+            padding: .25rem 0;
+            color: black;
+            cursor: pointer;
+        }
+
+        &__one {
+            width: 237px;
+            height: 297px;
+            text-align: center;
+            margin-bottom: 4em;
+        }
+
+        &__two {
+            width: 237px;
+            height: 297px;
+            text-align: center;
+        }
+    }
+
+    .contact-us-btn {
+
+        button {
+            position: relative;
+            top: 150px;
+            width: 190px;
+            height: 50px;
+            font-weight: 900;
+            background-color: transparent;
+            border: 2px solid $lightBlue;
+            outline: none;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+
+            a {
+                color: $mainBlue;
+            }
+
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+    }
+}

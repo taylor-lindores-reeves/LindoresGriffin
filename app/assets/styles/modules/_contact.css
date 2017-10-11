@@ -1,0 +1,126 @@
+.contact {
+    &__content {
+        width: 245px;
+        height: 340px;
+        float: left;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        display: none;
+
+        @mixin atMedium {
+            display: flex;
+        }
+
+        address {
+            font-size: 1.25rem;
+        }
+
+        &__numbers {
+            font-size: 1.1rem;
+        }
+
+        &__paragraph {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__map {
+        float: right;
+        border: 2px solid black;
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+    .contact-form {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        clear: right;
+        text-align: center;
+
+        @mixin atMedium {
+            text-align: left;
+        }
+
+        &__title {
+            padding: .5rem 0;
+            font-size: 1.75rem;
+
+            h4 {
+                font-weight: 100;
+            }
+        }
+
+        &__container {
+            border-top: 2px solid $lightBlue;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-top: 10px;
+
+            @mixin atMedium {
+                flex-direction: row;
+                float: right;
+                width: 735px;
+                justify-content: inherit;
+            }
+
+            input {
+                outline: none;
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 5px;
+                border: 1px solid black;
+            }
+
+            &__paragraph {
+                width: 225px;
+                font-size: 1.1em;
+                margin: 5px auto;
+
+                @mixin atMedium {
+                    margin-right: 30px;
+                }
+            }
+
+            &__details {
+                margin: auto;
+                width: 225px;
+                height: 100%;
+
+                @mixin atMedium {
+                    margin: 0 30px 0 0;
+                }
+            }
+
+            &__message {
+                margin: auto;
+                width: 225px;
+
+                textarea {
+                    padding: 5px;
+                    height: 135px;
+                    word-wrap: break-word;
+                    width: 225px;
+                    border: 1px solid black;
+                }
+
+                input.send-btn {
+                    background-color: black;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    font-weight: 900;
+                    height: 25px;
+                    width: 50px;
+                    cursor: pointer;
+                    float: right;
+                }
+            }
+        }
+    }
+}

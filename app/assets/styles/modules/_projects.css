@@ -1,0 +1,46 @@
+.projects {
+    padding-top: 3rem;
+
+    @mixin atMedium {
+        padding-top: 0;
+    }
+
+    &__title {
+        color: $lightBlue;
+        font-size: 1.5em;
+
+        &__main {
+            font-weight: 100;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+
+    &__container {
+        text-align: center;
+
+        @mixin atMedium {
+            text-align: left;
+            width: 735px;
+            float: right;
+        }
+    }
+
+    &__image {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 1.1em;
+        padding: 1em 1rem 2em 1rem;
+
+        @mixin atMedium {
+            padding: 1em 0 2em 0;
+        }
+    }
+}

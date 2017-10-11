@@ -1,0 +1,63 @@
+extends layout
+
+block head
+    - var theTitle = "Services"
+    title= `${h.siteName} | ${theTitle}`
+
+block sidebar
+    .sidebar.page-row-gap.main-content
+        h3 Services
+
+block content
+    .services.page-row-gap.main-content
+        .services__section-one
+            h1.services__title What we do
+            .services__content
+                p
+                    | We are committed to the provision of business consultancy and strategic guidance.
+                    | Our mission is to answer real business challenges for our clients through innovation and industry knowledge.
+                    | We understand businesses need to ensure that they are making the most effective
+                    | and efficient use of technology infrastructure. Elements such as websites, social media
+                    | and mobile computing should be adding to the capabilities of your business - not limiting it.
+
+        .services__section-two
+            h1.services__title Areas of work
+            .services__content
+                ol
+                    li IT Consultancy
+                    li Business Strategy
+                    li Web Development
+                    li Online Marketing
+                    li Video Production
+                    li Social Media Ops
+                    li Idea Generation
+
+        .services__section-three
+            h1.services__title In detail
+            .services__content__grid
+                .services__content__container
+                    h3.services__content__title IT Consultancy
+                    p.services__content__details With over 20 years of combined experience using computers, we are confident in our ability to teach how to use technology for business growth and development.
+
+                .services__content__container
+                    h3.services__content__title Business Strategy
+                    p.services__content__details We've been in business for over two years now, and what's worked for us will certainly work of most other businesses. We can shed some light on the tools and techniques we've used.
+
+                .services__content__container
+                    h3.services__content__title Web Development
+                    p.services__content__details Taylor is passionate about web design and development. Design-oriented, he has produced multiple websites including this one. He strives for excellence by keeping websites visually appealing and including the most important content.
+                .services__content__container
+                    h3.services__content__title Online Marketing
+                    p.services__content__details We will feedback our analysis of your current online presence and what we think will be the next steps for your business.
+
+                .services__content__container
+                    h3.services__content__title Video Production
+                    p.services__content__details Having access to the latest video production equipment and facilities on campus, we can provide you with services to enhance your online image.
+
+                .services__content__container
+                    h3.services__content__title Social Media Ops
+                    p.services__content__details We understand what social media platforms will help boost your business growth and believe we can add value by managing your social media accounts.
+
+                .services__content__container
+                    h3.services__content__title Idea Generation
+                    p.services__content__details We seek new possibilities for product ranges or general operational ideas using tested methods we've used before.

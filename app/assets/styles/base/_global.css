@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'DIN Next LT Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    min-height: 100%;
+    position: relative;
+    background-color: white;
+}
+
+a, a:visited, a:focus, a:active, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.main-content {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+
+.page-effect {
+    opacity: 1;
+}
